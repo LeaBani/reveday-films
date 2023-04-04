@@ -3,7 +3,7 @@ import {
   Flex, Heading, IconButton, Spacer, VStack, useColorMode,
 } from '@chakra-ui/react';
 import './App.css';
-import { FaSun, FaMoon, FaInstagram, FaVimeo, FaHeart } from 'react-icons/fa';
+import { FaSun, FaMoon } from 'react-icons/fa';
 import Header from './components/Header';
 import Social from './components/Social';
 import Profile from './components/Profile';
