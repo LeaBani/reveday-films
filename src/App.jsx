@@ -16,7 +16,7 @@ function App() {
     <VStack p={5}>
       <Flex w="100%">
         <Heading as="h1" size="3rem" noOfLines={1}>
-          Bienvenue
+          Reveday | WEDDING CINEMATOGRAPHY
         </Heading>
         <Spacer />
         <IconButton ml={8} icon={isDark ? <FaSun /> : <FaMoon />} isRound="true" onClick={toggleColorMode} />

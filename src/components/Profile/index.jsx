@@ -1,7 +1,7 @@
 import {
   Heading, Text, Box, Flex, useMediaQuery, Icon,
 } from '@chakra-ui/react';
-import { DiAndroid } from 'react-icons/di';
+import { FaFilm, FaMoneyBill } from 'react-icons/fa';
 
 function Profile() {
   const [isNotSmallerScreen] = useMediaQuery('(min-width: 600px)');
@@ -26,11 +26,12 @@ function Profile() {
         <Text fontWeight="bold" fontSize="24">Videaste de mariage</Text>
         <Flex direction={isNotSmallerScreen ? 'row' : 'column'} mt="8">
           <Flex rounded="20" direction="column" mt="4" bg="blue.400" h="30vh" w="30vh" justify="flex-end" _hover={{ bg: 'teal.400' }}>
-            <Icon color="white" p="4" as={DiAndroid} w="24" h="24" />
-            <Text color="white" p="4" fontSize="x1" fontWeight="semibold">App</Text>
+            <Icon color="white" p="4" as={FaFilm} w="24" h="24" />
+            <Text color="white" p="4" fontSize="x1" fontWeight="semibold">FILMS</Text>
           </Flex>
           <Flex rounded="20" direction="column" mt="4" bg="blue.400" h="30vh" w="30vh" justify="flex-end" _hover={{ bg: 'teal.400' }}>
-            <Text color="white" p="4" fontSize="x1" fontWeight="semibold">App 2</Text>
+            <Icon color="white" p="4" as={FaMoneyBill} w="24" h="24" />
+            <Text color="white" p="4" fontSize="x1" fontWeight="semibold">TARIFS</Text>
           </Flex>
         </Flex>
       </Box>
