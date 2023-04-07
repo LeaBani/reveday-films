@@ -12,27 +12,28 @@ function Header() {
 
   return (
     <Stack>
-      <AspectRatio ratio={5.3/3}>
+      <AspectRatio ratio={5.3 / 3}>
         <iframe
-          title="Rêveday Bande d’annonce"
+          title="Rêveday Bande annonce"
           src="https://player.vimeo.com/video/763779801?autoplay=1&amp;playsinline=1&amp;color=02010100&amp;autopause=0&amp;loop=1&amp;muted=0&amp;title=0&amp;portrait=0&amp;byline=0#t="
           allowFullScreen
         />
       </AspectRatio>
-      <Circle
-        position="absolute"
-        bg="blue.100"
-        opacity={0.1}
-        w="300px"
-        h="300px"
-        alignSelf="flex-end"
-      />
+
       <Flex
         direction={isNotSmallerScreen ? 'row' : 'column'}
         spacing="200px"
         p={isNotSmallerScreen ? '32' : '0'}
         alignSelf="flex-start"
       >
+        <Circle
+          position="absolute"
+          bg="blue.100"
+          opacity={0.1}
+          w="300px"
+          h="300px"
+          alignSelf="flex-end"
+        />
         <Box mt={isNotSmallerScreen ? '0' : '16'} align="flex-start">
           <Text fontSize="2rem" fontWeight="semiBold">Bonjour, je suis</Text>
           <Text fontSize="5rem" fontWeight="bold" bgGradient="linear(to-r, cyan.400, blue.500, purple.600)" bgClip="text">Favian Ramos</Text>

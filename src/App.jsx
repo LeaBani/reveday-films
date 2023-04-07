@@ -8,18 +8,16 @@ import Header from './components/Header';
 import Social from './components/Social';
 import Profile from './components/Profile';
 
-function App() {
-  const { colorMode, toggleColorMode } = useColorMode();
-  const isDark = colorMode === 'dark';
+import logo from './assets/logo.png';
+import NavBar from './components/NavBar';
 
+function App() {
   return (
     <VStack p={5}>
       <Flex w="100%">
-        <Heading as="h1" size="3rem" noOfLines={1}>
-          Reveday | WEDDING CINEMATOGRAPHY
-        </Heading>
+        <Heading as="img" size="3rem" noOfLines={1} mb="4" src={logo} />
+        <NavBar />
         <Spacer />
-        <IconButton ml={8} icon={isDark ? <FaSun /> : <FaMoon />} isRound="true" onClick={toggleColorMode} />
       </Flex>
       <Header />
       <Social />
